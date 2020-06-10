@@ -41,3 +41,4 @@ var reverse = function(x) {
     return final
 };
 
+// final > Math.pow(2, 31) -1 || final < -Math.pow(2, 31)
