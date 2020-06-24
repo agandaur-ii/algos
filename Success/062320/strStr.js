@@ -29,3 +29,9 @@ var strStr = function(haystack, needle) {
     }
     return -1
 };
+
+// shorter solution
+
+var strStr = function(haystack, needle) {
+    return haystack.indexOf(needle);
+};
