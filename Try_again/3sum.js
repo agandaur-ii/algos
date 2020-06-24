@@ -12,9 +12,9 @@
 // [
 //   [-1, 0, 1],
 //   [-1, -1, 2]
-// ]       
+// ]           
 
-//solution:
+//worked through solution:
 
 var threeSum = function(nums) {
 	const results = []
