@@ -19,7 +19,7 @@
 // Input: [1,3,5,6], 0
 // Output: 0
 
-// solution
+// solution 
 
 var searchInsert = function(nums, target) {
     if (nums[0] >= target) return 0
