@@ -37,3 +37,10 @@ var rotate = function(nums, k) {
     }
     return nums
 };
+
+// alt solution: 
+
+var rotate = function(nums, k) {
+    k = k % nums.length
+    nums.unshift(...nums.splice(-k));
+};
