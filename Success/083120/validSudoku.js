@@ -29,33 +29,33 @@ function validSudoku(matrix) {
     if (rowCheck(matrix) === false) return "INVALID"
     if (columnCheck(matrix) === false) return "INVALID"
     return "VALID"
-  }
+}
   
-  function identicalCheck(clone) {
+function identicalCheck(clone) {
     let firstRow = clone.shift()
     for (let i=0; i<clone.length; i++) {
-      let length = firstRow.length
-      while (length--) {
-        if (firstRow[length] !== clone[i][length]) return false
-      }
+        let length = firstRow.length
+        while (length--) {
+            if (firstRow[length] !== clone[i][length]) return false
+        }
     }
-  }
+}
   
-  function rowCheck(matrix) {
+function rowCheck(matrix) {
     let length = matrix.length
     for (let i=0; i<length; i++) {
-      if ([...new Set(matrix[i])].length !== length) return false
+        if ([...new Set(matrix[i])].length !== length) return false
     }
-  }
+}
   
-  function columnCheck(matrix) {
+function columnCheck(matrix) {
     let length = matrix.length
     let check = true
     for (let i=0; i<length; i++) {
-      let column = matrix.map(value => value[i])
-      if ([...new Set(column)].length !== length) {
-        check = false
-      }
+        let column = matrix.map(value => value[i])
+        if ([...new Set(column)].length !== length) {
+            check = false
+        }
     }
     return check
-  }
+}
