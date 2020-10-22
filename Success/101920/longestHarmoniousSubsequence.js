@@ -53,7 +53,6 @@ var findLHS = function(nums) {
         count = 0
         selfcount = 0
     }
-    if (max === 1) return 0
     return max
 };
 
